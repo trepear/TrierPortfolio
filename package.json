@@ -2,7 +2,7 @@
   "name": "trierportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "front.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/trepear/TrierPortfolio#readme",
   "dependencies": {
-    "emailjs-com": "^2.6.3",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
   }
