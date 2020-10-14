@@ -8,21 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <link rel="stylesheet" href="bootstrap.min.css">
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
     <!-- Lightbox-->
     <link rel="stylesheet" href="lightbox.min.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="style.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png">
     <!-- Leaflet CSS - For the map-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- For contact form SDK -->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_mrNoWPQOgNFVWxHhfVbN4");
+    })();
+    </script>
   </head>
   <body>
     <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">       
@@ -43,7 +49,7 @@
     <!-- navbar-->
     <header class="header">
       <nav class="navbar navbar-expand-lg">
-        <div class="container"><a href="#intro" class="navbar-brand link-scroll"><img src="img/logo.png" alt="" class="img-fluid"></a>
+        <div class="container"><a href="#intro" class="navbar-brand link-scroll"><img src="" alt="" class="img-fluid"></a>
           <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
           <div id="navbarSupportedContent" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
@@ -76,7 +82,7 @@
     </section>
     <!-- about end-->
     <!-- Services-->
-    <section id="services" style="background-color: #eee">
+    <section id="skills" style="background-color: #eee">
       <div class="container">
         <div class="row services">
           <div class="col-lg-12">
@@ -91,7 +97,7 @@
               </div>
               <div class="col-md-4">
                 <div class="box">
-                  <div class="icon"><i class="fa fa-print"></i></div>
+                  <div class="icon"><i class="fa fa-print" aria-hidden="true"></i></i></div>
                   <h5>Web Development</h5>
                   <p>Javascript, HTML5, CSS3, Bootstrap, jQuery, Mongoose, MySQL, Git and Command Line</p>
                 </div>
@@ -123,17 +129,17 @@
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="box"><a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-1.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="box"><a href="" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="" alt="image" class="img-fluid"></a></div>
                 <p><strong>Travel Japan </strong>- Front-end application that allows users to access a curated list of niche cities in Japan to travel to in light of COVID-19. Users are able to view pins on a map and view more information about the city when clicked upon.</p>
                 <p><strong>My Responsibilities </strong>- Javascript logic for front-end functionality.</p>
               </div>
               <div class="col-md-4">
-                <div class="box"><a href="img/portfolio-2.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-2.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="box"><a href="" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="" alt="image" class="img-fluid"></a></div>
                 <p><strong>RecSaver </strong>- Full stack application that allows users to search for movies or TV shows, add them to a “to watch” list, add a note to each saved item, update a note, and delete a list item. </p>
                 <p><strong>My Responsibilities </strong>- Front end design and styling, front end Javascript logic, back end database structure, back end API development.</p>
               </div>
               <div class="col-md-4">
-                <div class="box"><a href="img/portfolio-3.jpg" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="img/portfolio-3.jpg" alt="image" class="img-fluid"></a></div>
+                <div class="box"><a href="" data-lightbox="image-1" data-title="Some footer information" class="has-border"><img src="" alt="image" class="img-fluid"></a></div>
                 <p><strong>Wander </strong>- Full stack application that allows users to sign-in with Google, create a profile, view their profile image and other users’ profiles, on a world-map. Designed to be a social-media application to connect digital nomads to each other.</p>
                 <p><strong>My Responsibilities </strong>- Project manager, organizing and assigning tasks, conducting stand up meetings, back end database structure, back end API development</p>
               </div>
@@ -204,7 +210,9 @@
               </div>
               <div class="col-lg-6">
                 <p>Contact me via email, Github or LinkedIn.</p>
-                <p class="social"><a href="github.com/trepear" title="" class="gplus"><i class="fa fa-google-plus"></i></a><a href="#" title="" class="instagram"><i class="fa fa-instagram"></i></a><a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
+                <p class="social"><a href="https://www.github.com/trepear" title="" class="gplus" target="blank"><i class="fa fa-github" aria-hidden="true"></i>
+                </a><a href="https://www.linkedin.com/in/trier-buhrsmith-405591169/" title="" class="instagram" target="blank"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
+                <a href="#" title="" class="email"><i class="fa fa-envelope"></i></a></p>
               </div>
             </div>
           </div>
@@ -222,10 +230,6 @@
       </div>
     </footer>
     <!-- JavaScript files-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQgF0U4thnAFyIGXpznJ8w5Cov_aQ5cXs&callback=initMap&libraries=&v=weekly"></script>
     <script src="front.js"></script>
