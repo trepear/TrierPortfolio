@@ -57,6 +57,7 @@ Bootstrapious Boilerplate Template
   .heading {
     margin-bottom: 40px;
   }
+
   
   .heading:after {
     content: " ";
@@ -265,10 +266,32 @@ Bootstrapious Boilerplate Template
   =====================
   *
   */
-  .contact-form {
+  /* .contact-form {
     margin-bottom: 40px;
+  } */
+
+  #contact {
+    padding: 50px 0;
   }
   
+  #contact-heading {
+    text-align: center;
+  }
+
+  #contact-heading::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: pink;
+    margin-left: 40%;
+    margin-bottom: 20px;
+    background: #555;
+  }
+
+  #contact-paragraph {
+    text-align: center;
+  }
   p.social {
     text-align: center;
     margin-top: 20px;
